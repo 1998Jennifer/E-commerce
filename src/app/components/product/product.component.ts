@@ -11,6 +11,8 @@ export class ProductComponent implements OnInit {
   @Input() product: Product 
   @Output() productClicked: EventEmitter<any> = new EventEmitter()
   
+  today = new Date() 
+
   addCart(){
     console.log('añadido al carrito')
     this.productClicked.emit(this.product.id)
