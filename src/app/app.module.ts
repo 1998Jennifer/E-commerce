@@ -7,7 +7,6 @@ import { ProductComponent } from './product/product.component';
 import { CartComponent } from './cart/cart.component';
 
 import { ProductsComponent } from './products/products.component';
-import { ContactComponent } from './contact/contact.component';
 
 
 import { PageNoFoundComponent } from './page-no-found/page-no-found.component';
@@ -24,7 +23,6 @@ import { CoreModule } from './core/core.module'
     ProductComponent,
     CartComponent,
     ProductsComponent,
-    ContactComponent,
     PageNoFoundComponent,
     ProductDetailComponent,
     LayoutComponent
