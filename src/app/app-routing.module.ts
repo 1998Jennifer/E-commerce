@@ -4,7 +4,7 @@ import { RouterModule, Routes, PreloadAllModules } from '@angular/router';
 import { PageNoFoundComponent } from './page-no-found/page-no-found.component';
 import {ProductDetailComponent} from './products/components/product-detail/product-detail.component'
 import { LayoutComponent } from './layout/layout.component'
-// import { homedir } from 'node:os';
+import { AdminGuard } from './admin.guard';
 
 const routes: Routes = [
   // redirecciones
@@ -23,11 +23,13 @@ const routes: Routes = [
       },
       {
         path: 'products',
+        canActivate: [AdminGuard],
         loadChildren: ()=> import('./products/products.module').then(m => m.ProductsModule)
       },
       
       {
         path:'contact',
+        canActivate: [AdminGuard],
         loadChildren: ()=> import('./contact/contact.module').then(m => m.ContactModule)
       },
       
