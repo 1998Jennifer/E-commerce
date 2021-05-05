@@ -4,6 +4,13 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { MatBadgeModule } from '@angular/material/badge';
+import {MatCardModule} from '@angular/material/card';
+import {MatDividerModule} from '@angular/material/divider';
+import {MatListModule} from '@angular/material/list';
+import {MatInputModule} from '@angular/material/input';
+
+
+
 
 @NgModule({
   declarations: [],
@@ -12,14 +19,22 @@ import { MatBadgeModule } from '@angular/material/badge';
     MatButtonModule,
     MatToolbarModule,
     MatIconModule,
-    MatBadgeModule
+    MatBadgeModule,
+    MatCardModule,
+    MatDividerModule,
+    MatListModule,
+    MatInputModule
 
   ],
   exports: [
     MatButtonModule,
     MatToolbarModule,
     MatIconModule,
-    MatBadgeModule
+    MatBadgeModule,
+    MatCardModule,
+    MatDividerModule,
+    MatListModule,
+    MatInputModule
   ]
 })
 export class MaterialModule { }

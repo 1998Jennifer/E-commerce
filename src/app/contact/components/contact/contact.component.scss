@@ -1,0 +1,48 @@
+.contact-container {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+  h2 {
+    color: #fd79a8;
+    font-size: 3em;
+  }
+}
+.contact-descripcion p {
+  margin-top: 20px;
+}
+
+.material-icons .img {
+  font-size: 15em;
+  color: #fd79a8;
+}
+.p {
+  margin-top: 15px;
+  margin-left: 10px;
+}
+.datos .info {
+  margin-left: 20px;
+}
+.divider {
+  text-align: start;
+}
+.imagen {
+  width: 50%;
+}
+.imagen img {
+  width: 100%;
+}
+
+@media (max-width: 360px) {
+  .contact-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    h2 {
+      color: #fd79a8;
+      font-size: 2em;
+    }
+  }
+  .material-icons .img {
+    font-size: 5em;
+  }
+}
