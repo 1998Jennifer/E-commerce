@@ -14,11 +14,15 @@ import { MatListModule } from '@angular/material/list';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatCardModule } from '@angular/material/card';
-import { MatMenuModule } from '@angular/material/menu'
+import { MatMenuModule } from '@angular/material/menu';
+import { TableComponent } from './components/table/table.component';
+import { MatTableModule } from '@angular/material/table';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatSortModule } from '@angular/material/sort'
 
 
 @NgModule({
-  declarations: [ProductFormComponent, NavComponent, DashboardComponent],
+  declarations: [ProductFormComponent, NavComponent, DashboardComponent, TableComponent],
   imports: [
     CommonModule,
     AdminRoutingModule,
@@ -32,7 +36,10 @@ import { MatMenuModule } from '@angular/material/menu'
     MatListModule,
     MatGridListModule,
     MatCardModule,
-    MatMenuModule
+    MatMenuModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatSortModule
   ]
 })
 export class AdminModule { }
