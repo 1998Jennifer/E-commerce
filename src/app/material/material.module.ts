@@ -8,7 +8,9 @@ import {MatCardModule} from '@angular/material/card';
 import {MatDividerModule} from '@angular/material/divider';
 import {MatListModule} from '@angular/material/list';
 import {MatInputModule} from '@angular/material/input';
-
+import { MatSelectModule } from '@angular/material/select';
+import { MatRadioModule } from '@angular/material/radio';
+// import { ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -23,7 +25,9 @@ import {MatInputModule} from '@angular/material/input';
     MatCardModule,
     MatDividerModule,
     MatListModule,
-    MatInputModule
+    MatInputModule,
+    MatSelectModule,
+    MatRadioModule,
 
   ],
   exports: [
@@ -34,7 +38,9 @@ import {MatInputModule} from '@angular/material/input';
     MatCardModule,
     MatDividerModule,
     MatListModule,
-    MatInputModule
+    MatInputModule,
+    MatSelectModule,
+    MatRadioModule,
   ]
 })
 export class MaterialModule { }
