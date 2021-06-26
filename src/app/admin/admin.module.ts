@@ -18,11 +18,12 @@ import { MatMenuModule } from '@angular/material/menu';
 import { TableComponent } from './components/table/table.component';
 import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
-import { MatSortModule } from '@angular/material/sort'
+import { MatSortModule } from '@angular/material/sort';
+import { ProductsListComponent } from './components/products-list/products-list.component'
 
 
 @NgModule({
-  declarations: [ProductFormComponent, NavComponent, DashboardComponent, TableComponent],
+  declarations: [ProductFormComponent, NavComponent, DashboardComponent, TableComponent, ProductsListComponent],
   imports: [
     CommonModule,
     AdminRoutingModule,
