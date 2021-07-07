@@ -27,7 +27,19 @@ export class ProductsListComponent implements OnInit {
 
   deleteProduct(id: string){
     this.productsService.deleteProducto(id).subscribe(rta => {
-      this.fetchProducts();
+      // reto
+      console.log("Producto borrado...");
+      if(rta){
+        // Esto quitará el item de la vista para evitar hacer recarga
+        console.log(rta);
+        const index =  this.products.findIndex(product =>{
+          product.id === id
+        });
+        this.products.splice(index, 1);
+        this.products = [...this.products]
+        
+      }
+      
     });
 
   }

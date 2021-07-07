@@ -33,11 +33,11 @@ export class ProductDetailComponent implements OnInit {
 
   createProduct(){
     const newProduct: Product = {
-      id: '222',
-      title: 'nuevo desde angular',
-      image: 'assets/images/banner-1.jpg',
-      price: 200,
-      description: 'Nuevo producto'
+      id: '5',
+      title: 'Stickers',
+      image: 'assets/images/stickers1.png',
+      price: 80000,
+      description: 'bla bla bla bla'
     }
     this.productsService.createProduct(newProduct).subscribe(product => {
       console.log(product);
